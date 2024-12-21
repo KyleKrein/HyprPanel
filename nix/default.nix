@@ -36,8 +36,8 @@
     src = ../.;
 
     buildPhase = ''
-      ${bun}/bin/bun build ./main.ts \
-        --outfile main.js \
+      ${bun}/bin/bun build ./app.ts \
+        --outfile app.js \
         --external "resource://*" \
         --external "gi://*"
     '';
